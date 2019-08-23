@@ -198,6 +198,9 @@ suspend fun player(name: String, table: Channel<Ball>) {
 
 data class Ball(var hits: Int)
 
+/**
+ * 计时器通道是一种特别的会合通道，每次经过特定的延迟都会从该通道进行消费并产生 Unit。
+ */
 fun test29() = runBlocking {
     val tickerChannel = ticker(delayMillis = 100,initialDelayMillis = 0) // 创建计时器通道
     var nextElement = withTimeoutOrNull(1){ tickerChannel.receive()}
