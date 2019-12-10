@@ -11,11 +11,11 @@ fun test10() = runBlocking {
         }
     }
     kotlinx.coroutines.delay(1300L) // 延迟一段时间
-    println("main: I'm tired of waiting!")
+    println("com.leetcode.kotlin.main: I'm tired of waiting!")
     job.cancel() // 取消该作业
     job.join()  // 等待作业执行结束
     job.cancelAndJoin()
-    println("main: Now I can quit.")
+    println("com.leetcode.kotlin.main: Now I can quit.")
 }
 
 /***
@@ -35,9 +35,9 @@ fun test11() = runBlocking {
         }
     }
     kotlinx.coroutines.delay(1300L) // 等待一段时间
-    println("main: I'm tired of waiting!")
+    println("com.leetcode.kotlin.main: I'm tired of waiting!")
     job.cancelAndJoin() // 取消一个作业并且等待它结束
-    println("main: Now I can quit.")
+    println("com.leetcode.kotlin.main: Now I can quit.")
 }
 
 /***
@@ -57,9 +57,9 @@ fun test12() = runBlocking {
         }
     }
     kotlinx.coroutines.delay(1300L) // 等待一段时间
-    println("main: I'm tired of waiting!")
+    println("com.leetcode.kotlin.main: I'm tired of waiting!")
     job.cancelAndJoin() // 取消该作业并等待它结束
-    println("main: Now I can quit.")
+    println("com.leetcode.kotlin.main: Now I can quit.")
 }
 
 /**
@@ -77,9 +77,9 @@ fun test13() = runBlocking {
         }
     }
     kotlinx.coroutines.delay(1300L) // 延迟一段时间
-    println("main: I'm tired of waiting!")
+    println("com.leetcode.kotlin.main: I'm tired of waiting!")
     job.cancelAndJoin() // 取消该作业并且等待它结束
-    println("main: Now I can quit.")
+    println("com.leetcode.kotlin.main: Now I can quit.")
 }
 
 /**
@@ -103,9 +103,9 @@ fun test14() = runBlocking {
         }
     }
     kotlinx.coroutines.delay(1300L) // 延迟一段时间
-    println("main: I'm tired of waiting!")
+    println("com.leetcode.kotlin.main: I'm tired of waiting!")
     job.cancelAndJoin() // 取消作业并等待它结束
-    println("main: Now I can quit.")
+    println("com.leetcode.kotlin.main: Now I can quit.")
 }
 
 fun test15() = runBlocking {
